@@ -26,18 +26,10 @@ public class RainfallService : IRainfallService
         var response = new RainfallReadingResponse();
         try
         {
-
-
             response = await _httpClient.GetFromJsonAsync<RainfallReadingResponse>($"/flood-monitoring/id/stations/{stationId}/readings?_sorted&_limit={limit}", options: JsonSerializerOptions);
 
-            throw new Exception();
         }
         catch (HttpRequestException ex)
-        {
-            //TODO Log error for investigation
-            throw ex;
-        }
-        catch (Exception ex)
         {
             //TODO Log error for investigation
             throw ex;
