@@ -1,4 +1,6 @@
-﻿namespace Rainfall.Api.Core.Application.Common.Response.External
+﻿using Newtonsoft.Json;
+
+namespace Rainfall.Api.Core.Application.Common.Response.External
 {
     public class RainfallReadingResponse
     {
@@ -6,9 +8,9 @@
     }
     public class RainfallReading
     {
+        [JsonProperty("@id")]
         public string Id { get; set; }
         public DateTime DateTime { get; set; }
-        public string Measure { get; set; }
-        public double value { get; set; }
+        public decimal Value { get; set; }
     }
 }

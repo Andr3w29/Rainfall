@@ -6,7 +6,7 @@
     }
     public class RainfallReading
     {
-        public string DateMeasured { get; set; }
+        public DateTime DateMeasured { get; set; }
         public double AmountMeasured { get; set; }
     }
 }

@@ -1,4 +1,6 @@
-﻿using Rainfall.Api.Core.Application.Common.Response.Rainfall;
+﻿
+
+using Rainfall.Api.Core.Application.Common.Response.External;
 
 namespace Rainfall.Api.Core.Application.Common.Interfaces.External
 {
